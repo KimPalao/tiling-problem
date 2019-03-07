@@ -34,7 +34,7 @@ function tile(table, x, y, width, height) {
             (function(i) {
                 setTimeout(() => {
                     tile(table, x + (Math.floor((width / 2) * (i % 2))), y + Math.floor((width / 2 * Math.floor(i / 2))), width / 2, height / 2);
-                }, i*0);
+                }, i*200);
             })(i);
             // tile(table, x + ((width / 2) * (i % 2)), y + (width / 2 * Math.floor(i / 2)), width / 2, height / 2);
             // setTimeout(() => {
@@ -45,7 +45,7 @@ function tile(table, x, y, width, height) {
             //     })(i);
             // }, 1000);
         }
-    }, 0);
+    }, 1000);
 }
 
 function create_hole(event) {
